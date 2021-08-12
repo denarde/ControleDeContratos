@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gerenciador de Contas</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>  
+<body>
+    <div class="row px-4" >
+        <h1>Gerenciador de Contas</h1>
+    
+    </div>
+    <div class="row px-1" >
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html" >Contas</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="cadastro.html">Cadastrar</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <section>
+        <div>
+            <table class="table" id="tabelaContas">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th>Vencimento do Contrato</th>
+                        <th>Pago ?</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyContas">
+                </tbody>
+            </table>
+
+        </div>
+        <div class="row px-4">
+            <h3>Resumo</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Qtd Contas</th>
+                        <th>Valor Total</th>
+                        <th>Valor Pago Total</th>
+                        <th>Qtd Pago</th>
+                        <th>Qtd a Receber</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyResumo">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small fixed-bottom">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright: Aps 8 º Semestre
+        </div>
+        <!-- Copyright -->
+      
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

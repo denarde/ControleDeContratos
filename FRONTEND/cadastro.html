@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gerenciador de Contas</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+        <div class="row px-4" >
+            <h1>Gerenciador de Contas</h1>
+        </div>
+        <div class="row px-1">     
+            <nav class="navbar navbar-expand-sm bg-light navbar-light">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" >Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="cadastro.html">Cadastrar</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">Sobre</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+            <form action="" class="px-3">
+                <div class="form-group">
+                    <label><h2>Cadastro</h2></label>
+    
+                </div>
+                <div class="form-group">
+                    <label>Nome : </label>
+                    <input type="text" class="form-control" id="nome">
+
+                </div>
+                <div class="form-group">
+                    <label>Valor : </label>
+                    <input type="number" class="form-control" id="valor">
+
+                </div>
+                <div class="form-group">
+                    <label>Vencimento Contrato : </label>
+                    <input type="date" class="form-control" id="vencimento">
+
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" id="pago">Pago ?
+                    </label>
+                    
+                    
+                </div>
+                <div class="form-group">
+                    <input type="button" value="Cadastrar" class="btn btn-primary" onclick="cadastraConta()">
+    
+                </div>
+                
+
+            </form>
+    
+    
+    <!-- Footer -->
+    <footer class="page-footer font-small fixed-bottom">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright: Aps 8 º Semestre
+        </div>
+        <!-- Copyright -->
+      
+    </footer>
+    <!-- Footer -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="cadastro.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
